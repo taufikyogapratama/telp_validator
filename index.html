@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>No Tlp Validator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Telephon Number Validator</h1>
+        </header>
+        <main>
+            <form>
+                <label for="user-input">Enter a phone number</label>
+                <input type="tel" id="user-input" maxlength="21">
+                <div class="btn">
+                    <button id="check-btn" onclick="validator(event)">Check</button>
+                    <button id="clear-btn" onclick="clear_all(event)">Clear</button>
+                </div>
+            </form>
+
+            <div id="results-div">
+                
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
