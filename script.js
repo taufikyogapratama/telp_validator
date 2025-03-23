@@ -4,7 +4,7 @@ const validator = (event) => {
     const inputNomor = document.getElementById('user-input').value;
     if(inputNomor){
         const nomor = inputNomor.replace(/[^\d+]/g, '')
-        const pola = /^(\+1|1)?[\s-]*\(?\d{3}\)?[\s-]*\d{3}[\s-]*\d{4}$/;
+        const pola = /^(\+1|1)?[\s-]*(\(\d{3}\)|\d{3})[\s-]*\d{3}[\s-]*\d{4}$/;
         const isValid = (nomor.length === 10 || nomor.length === 11) && pola.test(inputNomor);
         if(isValid){
             const div_result = document.getElementById('results-div');
